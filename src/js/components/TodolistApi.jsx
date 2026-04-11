@@ -75,7 +75,7 @@ export const TodolistApi = () => {
 				method: "DELETE"
 			});
 
-			const data = await response.json();
+			const data = await response.text();
 			console.log("Tarea eliminada:", data);
 
 			await obtenerLista();
@@ -113,7 +113,7 @@ export const TodolistApi = () => {
 		<div className="container mt-5">
 			<div className="row justify-content-center">
 				<div className="col-12 col-md-8 col-lg-6">
-					<h1 className="text-center main-title">TASKS AND EVENTS</h1>
+					<h1 className="text-center main-title">Tasks and Events</h1>
 
 					<div className="paper">
 						<input
